@@ -18,26 +18,22 @@
   <script src="detail.js"></script> 
 </head>
 
-<body>    
+<body>
   <ons-screen>
+    <ons-search-input ng-model="searchText" placeholder="Smart Search"></ons-search-input>
     <ons-navigator title="Presentations">
       <ons-page class="center">
+        <!-- <div>hahahahah</div> -->
         <div ng-controller="MasterController">
           <ons-list>
                 <ons-list-item
                   class="topcoat-list__item--tappable topcoat-list__item__line-height" 
-                  ng-repeat="item in items" 
+                  ng-repeat="item in items | filter:searchText"
                   ng-click="showDetail($index)">
                   <ons-row>
-                    <!-- <ons-col size="10"> 
-                      <ons-icon 
-                          icon="{{item.icon}}"
-                          fixed-width="true">
-                      </ons-icon>
-                    </ons-col> -->
                     <ons-col class="left">
-                      <h2 class="orangify">{{item.Title}}</h2>
-                      <p>{{item.Student}}</p>
+                      <h3>{{item.Title}}</h3>
+                      <p class="beautify">{{item.Student}}</p>
                     </ons-col>
                   </ons-row>                          
                 </ons-list-item>
