@@ -33,8 +33,8 @@
                   ng-click="showDetail2(item)">
                   <ons-row>
                     <ons-col class="left">
-                      <h3>{{item.Title}}</h3>
-                      <p class="beautify">{{item.Student}}</p>
+                      <h3>{{item.Title|truncate:50}}</h3>
+                      <p class="beautify">{{item.Student|truncate:30}}</p>
                     </ons-col>
                   </ons-row>                          
                 </ons-list-item>
