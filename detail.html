@@ -1,8 +1,22 @@
 <div class="page center" ng-controller="DetailController">
-	<ons-scroller>
-	    <h3 class="orangify open-sans">{{item.Title}}</h3>
-	    <div class="abstract">
-	    	<p class="left">{{item.Abstract}}</p>
-		</div>
-	</ons-scroller>
+    <ons-scroller>
+        <h3 class="">{{item.Title}}</h3>
+        <ons-row>
+        <p class="detail-student">{{item.Student}}</p>
+        </ons-row>
+
+        <ons-row>
+            <ons-col>
+            <p class="detail-student left">{{item.Location}}{{item.Easel}}</p>
+            </ons-col>
+            <ons-col>
+
+            </ons-col>
+        </ons-row>
+
+        <h4>Abstract</h4>
+        <div class="abstract">
+            <p class="left">{{item.Abstract}}</p>
+        </div>
+    </ons-scroller>
 </div>

@@ -12,6 +12,12 @@ body {
 	text-align: left;
 }
 
+.detail-student{
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
 p{
 	font-family: 'Josefin Sans', sans-serif;
 	margin-top: 0px;
@@ -22,6 +28,12 @@ h3{
 	font-family: 'Open Sans', sans-serif;
 	color: #d34937;
 	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+h4{
+	font-family: 'Open Sans', sans-serif;
+	color: #5D5D5D;
 	margin-bottom: 0px;
 }
 
