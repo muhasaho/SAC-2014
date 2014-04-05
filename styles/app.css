@@ -1,6 +1,13 @@
 @import url(http://fonts.googleapis.com/css?family=Josefin+Sans|Cinzel+Decorative:700,900);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 
+body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  /*  background-color: #153A5F;*/
+}
+
 .left {
 	text-align: left;
 }
@@ -29,4 +36,9 @@ h3{
 .abstract{
 	margin-left: 10px;
 	margin-right: 10px;
+	padding-bottom: 90px;
+}
+
+.footer{
+	margin-bottom: 100px;
 }
