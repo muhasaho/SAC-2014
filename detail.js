@@ -10,4 +10,9 @@ function DetailController($scope, Data){
     		return item.Location
     	}
     }
+
+    //navigates back to previous page
+    $scope.goBack = function(){
+    	$scope.ons.navigator.popPage();
+    }
 }
