@@ -14,6 +14,7 @@ function MasterController($scope, Data){
     	Data.selectedItem = selectedItem;
     	$scope.ons.navigator.pushPage('detail.html', { title : selectedItem.title });
     }
+
 }
 
 
