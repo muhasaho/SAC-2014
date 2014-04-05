@@ -29,13 +29,17 @@
           <ons-list>
                 <ons-list-item
                   class="topcoat-list__item--tappable topcoat-list__item__line-height" 
-                  ng-repeat="item in items | filter:searchText"
+                  ng-repeat="item in items | filter:searchText | orderBy:item.Program"
                   ng-click="showDetail2(item)">
+                  <h3 class="left">{{item.Title|truncate:50}}</h3>
                   <ons-row>
-                    <ons-col class="left">
-                      <h3>{{item.Title|truncate:50}}</h3>
-                      <p class="beautify">{{item.Student|truncate:30}}</p>
-                    </ons-col>
+                      <ons-col class="left">
+                        <p class="">{{item.Student|truncate:25}}</p>
+                      </ons-col>
+
+                      <ons-col class="left">
+                        <p class="">{{item.Program|truncate:25}}</p>
+                      </ons-col>
                   </ons-row>                          
                 </ons-list-item>
             </ons-list>
