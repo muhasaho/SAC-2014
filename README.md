@@ -1,7 +1,7 @@
 SAC-2014
 ========
 
-This web-app displays presentation schedules for Minnesota State University Moorhead, Student Academic Conference 2014.
+This mobile-optimized web-app displays presentation schedules for Minnesota State University Moorhead, Student Academic Conference 2014.
 
 The web-app can be viewed at http://muhasaho.github.io/SAC-2014/
 

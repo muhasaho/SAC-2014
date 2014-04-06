@@ -1,5 +1,5 @@
 function MasterController($scope, Data){
-    $scope.items = Data.items;  
+    $scope.items = Data.items;
     
     // this one does not work properly when a filter is applied
     $scope.showDetail = function(index){
@@ -14,6 +14,7 @@ function MasterController($scope, Data){
     	Data.selectedItem = selectedItem;
     	$scope.ons.navigator.pushPage('detail.html', { title : selectedItem.title });
     }
+    
 
 }
 

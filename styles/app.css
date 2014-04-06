@@ -65,7 +65,7 @@ h4{
 }
 
 .back{
-	margin-bottom: 30px;
+	margin-bottom: 10px;
 }
 
 .topcoat-navigation-bar__title{
@@ -74,4 +74,5 @@ h4{
 
 .my-footer{
 	margin-bottom: 90px;
+	margin-top: 20px;
 }
