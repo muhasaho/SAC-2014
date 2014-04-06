@@ -21,7 +21,7 @@
 
 <body>
   <ons-screen>
-    <ons-search-input class="searchbox" ng-model="searchText" placeholder="Smart Search. Tap titles below for details."></ons-search-input>
+    <ons-search-input class="searchbox" ng-model="searchText" placeholder="Search. Tap titles below for details."></ons-search-input>
     <ons-navigator title="SAC 2014">
       <ons-page class="center">
         <!-- <div>hahahahah</div> -->
@@ -37,11 +37,11 @@
                   <h3 class="left">{{item.Title|truncate:50}}</h3>
                   <ons-row>
                       <ons-col class="left">
-                        <p class="">{{item.Student|truncate:25}}</p>
+                        <p class="">{{item.Student|truncate:20}}</p>
                       </ons-col>
 
                       <ons-col class="left">
-                        <p class="">{{item.Program|truncate:25}}</p>
+                        <p class="">{{item.Program|truncate:20}}</p>
                       </ons-col>
                   </ons-row>
                 </ons-list-item>
