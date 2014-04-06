@@ -13,7 +13,7 @@ body {
 	text-align: left;
 }
 
-p{
+a,p{
 	font-family: 'Josefin Sans', sans-serif;
 	margin-top: 0px;
 	margin-bottom: 0px;
@@ -42,6 +42,8 @@ h4{
 	line-height: 2.5rem;
 	font-size: 1.25rem;
 	height: 2.5rem;
+	border-radius: 0px;
+	-webkit-border-radius: 0px;
 }
 
 .front {
@@ -63,9 +65,13 @@ h4{
 }
 
 .back{
-	margin-bottom: 90px;
+	margin-bottom: 30px;
 }
 
-.footer{
-	margin-bottom: 100px;
+.topcoat-navigation-bar__title{
+	color: #FF4000;
+}
+
+.my-footer{
+	margin-bottom: 90px;
 }
