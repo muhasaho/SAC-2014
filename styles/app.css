@@ -1,6 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Josefin+Sans|Cinzel+Decorative:700,900);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
-@import url(http://fonts.googleapis.com/css?family=Kite+One);
 
 body {
     height: 100%;
@@ -42,8 +41,9 @@ h4{
 	line-height: 2.5rem;
 	font-size: 1.25rem;
 	height: 2.5rem;
-	border-radius: 0px;
-	-webkit-border-radius: 0px;
+	border-radius: 1px;
+	-webkit-border-radius: 1px;
+	border: 2px solid #FF4000;
 }
 
 .front {
