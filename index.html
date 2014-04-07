@@ -2,8 +2,8 @@
 <html lang="en" ng-app="myApp">
 <head>
   <meta charset="utf-8">
-<!--   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
- -->  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes"> -->
+  <!--   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> -->
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes"> -->
   <title>SAC 2014</title>  
   
   <link rel="stylesheet" href="lib/onsen/css/onsenui.css">  
@@ -32,19 +32,29 @@
 
 <body>
   <ons-screen>
-    <ons-search-input class="searchbox" ng-model="searchText" placeholder="Search. Tap titles below for details."></ons-search-input>
-    <ons-navigator title="SAC 2014">
+
+
+ <ons-navigator title="SAC 2014">
       <ons-page class="center">
-        <!-- <div>hahahahah</div> -->
-        <div ng-controller="MasterController">
-          <ons-list>
+
+        <div ng-controller="MasterController" >
+            <ons-search-input class="searchbox" ng-model="searchText" placeholder="Search"></ons-search-input>
+          <ons-list class="main-content-list">
                 <!-- <ons-list-item  style="padding:0px;margin:0px;">
                   <ons-search-input class="searchbox" ng-model="searchText" placeholder="Smart Search. Tap titles below for details."></ons-search-input>
                 </ons-list-item> -->
+
+
                 <ons-list-item
                   class="topcoat-list__item--tappable topcoat-list__item__line-height" 
                   ng-repeat="item in items | filter:searchText | orderBy:item.Program"
                   ng-click="showDetail2(item)">
+
+
+                  <ons-row>
+
+                  <ons-col size="90">
+
                   <h3 class="left">{{item.Title|truncate:50}}</h3>
                   <ons-row>
                       <ons-col class="left">
@@ -55,6 +65,26 @@
                         <p class="">{{item.Program|truncate:20}}</p>
                       </ons-col>
                   </ons-row>
+              
+                  </ons-col>
+
+                  <ons-col size="10" class="list-icon">
+                    <ons-icon class="right"
+                    icon="angle-right">
+                  </ons-icon>
+                </ons-col>
+                </ons-row>
+
+
+
+
+
+
+
+
+
+
+
                 </ons-list-item>
                 <ons-list-item  style="margin-bottom:40px;">
                   <p style="padding:30px;">&copy; Copyright 2014 <a target="_blank" href="http://www.sahoism.com">M. Saho</a></p>
@@ -68,7 +98,7 @@
 
 
 
-  
+
   <!-- Analytics -->
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
