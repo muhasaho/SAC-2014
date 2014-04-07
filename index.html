@@ -51,42 +51,31 @@
                   ng-click="showDetail2(item)">
 
 
-                  <ons-row>
+                    <ons-row>
 
-                  <ons-col size="90">
+                      <ons-col size="90">
 
-                  <h3 class="left">{{item.Title|truncate:50}}</h3>
-                  <ons-row>
-                      <ons-col class="left">
-                        <p class="">{{item.Student|truncate:20}}</p>
+                        <h3 class="left">{{item.Title|truncate:50}}</h3>
+                        <ons-row>
+                            <ons-col class="left">
+                              <p class="">{{item.Student|truncate:15}}</p>
+                            </ons-col>
+
+                            <ons-col class="left">
+                              <p class="">{{item.Program|truncate:15}}</p>
+                            </ons-col>
+                        </ons-row>
+                  
                       </ons-col>
 
-                      <ons-col class="left">
-                        <p class="">{{item.Program|truncate:20}}</p>
+                      <ons-col size="10" class="list-icon">
+                        <ons-icon class="right"
+                          icon="angle-right">
+                        </ons-icon>
                       </ons-col>
                   </ons-row>
-              
-                  </ons-col>
-
-                  <ons-col size="10" class="list-icon">
-                    <ons-icon class="right"
-                    icon="angle-right">
-                  </ons-icon>
-                </ons-col>
-                </ons-row>
-
-
-
-
-
-
-
-
-
-
-
                 </ons-list-item>
-                <ons-list-item  style="margin-bottom:40px;">
+                <ons-list-item>
                   <p style="padding:30px;">&copy; Copyright 2014 <a target="_blank" href="http://www.sahoism.com">M. Saho</a></p>
                 </ons-list-item>
             </ons-list>

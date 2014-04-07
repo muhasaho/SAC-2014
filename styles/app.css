@@ -16,6 +16,7 @@ a,p{
 	font-family: 'Josefin Sans', sans-serif;
 	margin-top: 0px;
 	margin-bottom: 0px;
+	line-height: 1.4em;
 }
 
 h3{
@@ -23,6 +24,8 @@ h3{
 	color: #d34937;
 	margin-top: 0px;
 	margin-bottom: 0px;
+	line-height: 1.4em;
+	font-size: 1em;
 }
 
 h4{
@@ -46,11 +49,11 @@ h4{
 	/*border: 2px solid #FF4000;*/
 
 
-display: block;
-position: absolute;
-left:0px;
-top:0px;
-z-index:10000000
+	display: block;
+	position: absolute;
+	left:0px;
+	top:0px;
+	z-index:10000000;
 
 }
 
@@ -59,7 +62,15 @@ z-index:10000000
 
 }
 
+.main-content-list ul>li{
+	padding-top: 1em;
+	padding-bottom: 1em;
 
+}
+
+.detail-title{
+	margin: 10px;
+}
 
 .list-icon {
 width: 50%;
@@ -102,6 +113,6 @@ height: 50%;
 }
 
 .my-footer{
-	margin-bottom: 90px;
+	margin-bottom: 50px;
 	margin-top: 20px;
 }
