@@ -89,6 +89,7 @@ height: 50%;
 
 .program-tag span{
 	font-size: 10px;
+	line-height: 10px;
 	text-transform: uppercase;
 	color: #fff;
 	background-color: #b7b7b7;
