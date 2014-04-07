@@ -62,7 +62,13 @@
                             </ons-col>
 
                             <ons-col class="left">
-                              <p class="program-tag"><span>{{item.Program|truncate:15}}</span></p>
+
+                                <div ng-if="item.Program">
+                                   <p class="program-tag"><span>{{item.Program|truncate:15}}</span></p>
+
+<!--                                     <div>From: {{message.from.name}}</div>
+ -->                                </div>    
+
                             </ons-col>
                         </ons-row>
                   
