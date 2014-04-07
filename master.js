@@ -10,11 +10,10 @@ function MasterController($scope, Data){
 
     // this one is not index based and therefore would not be affected by filters
     $scope.showDetail2 = function (item) {
-    	$scope.searchText = ""
-    	// console.log("seeing the search from master" + $scope.searchText);
     	var selectedItem = item;
     	Data.selectedItem = selectedItem;
     	$scope.ons.navigator.pushPage('detail.html', { title : selectedItem.title });
+    	$scope.searchText = "";
     }
     
 
