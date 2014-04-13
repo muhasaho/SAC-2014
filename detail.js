@@ -3,11 +3,11 @@ function DetailController($scope, Data){
 
     //automatically choses between Room and Easel
     $scope.showLocation = function(item){
-    	if (item.Location != ""){
+    	if (item.Location != "Hallway"){
     		return item.Location;
     	}
     	else if (item.Easel != ""){
-    		return "Easel " + item.Easel.toString();
+    		return "Hallway Easel " + item.Easel.toString();
     	}
     	else{
     		return "";
