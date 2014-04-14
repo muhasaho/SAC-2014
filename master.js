@@ -13,7 +13,11 @@ function MasterController($scope, Data){
     	var selectedItem = item;
     	Data.selectedItem = selectedItem;
     	$scope.ons.navigator.pushPage('detail.html', { title : selectedItem.title });
-    	$scope.searchText = "";
+        window.setTimeout(clearSearchBox,500);
+    }
+
+    function clearSearchBox(){
+        $scope.searchText = "";
     }
     
 
