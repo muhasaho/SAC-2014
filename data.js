@@ -1622,7 +1622,7 @@ myApp.factory('Data', function(){
   },
   {
     "Title":"Quick Mobile Apps with HTML5",
-    "Abstract":"The last decade has seen a wealth of consumer electronics that emphasize their extensibility through third party applications otherwise knows as apps. Cell Phones, TVs, cars, and even refrigerators now support apps. This provides a special challenge to software developers who want users to engage with their apps on all these different devices. Hyper Text Markup Language 5 (HTML5) aims to unify them by allowing developers to write code once, and deploy to all desired devices. Although the technology is still quite young, HTML5 is the most viable cross platform software development framework of the near future. This presentation will demonstrate some of the tools available today.",
+    "Abstract":"The last decade has seen a wealth of consumer electronics that emphasize their extensibility through third party applications otherwise knows as apps. Cell phones, TVs, cars, and even refrigerators now support apps. This provides a special challenge to software developers who want users to engage with their apps on all these different devices. Hyper Text Markup Language 5 (HTML5) aims to unify them by allowing developers to write code once, and deploy to all desired devices. Although the technology is still quite young, HTML5 is the most viable cross platform software development framework of the near future. This presentation will demonstrate some of the tools available today.",
     "Program":"Computer Science and Information Systems",
     "Advisor":"Chen, Andrew",
     "Student":"Muhammed Saho",
